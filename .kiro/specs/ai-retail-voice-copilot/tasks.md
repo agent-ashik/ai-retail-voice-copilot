@@ -8,7 +8,7 @@ All property-based tests use the `hypothesis` library for Python and are configu
 
 ## Tasks
 
-- [ ] 1. Set up project structure and core infrastructure
+- [-] 1. Set up project structure and core infrastructure
   - Create Python project with virtual environment (Python 3.9+)
   - Set up directory structure: `src/`, `tests/`, `config/`, `models/`, `scripts/`
   - Configure dependencies: FastAPI, SQLAlchemy, boto3 (AWS SDK), pytest, hypothesis, fast-check (for property tests)
