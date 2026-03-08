@@ -8,7 +8,7 @@ All property-based tests use the `hypothesis` library for Python and are configu
 
 ## Tasks
 
-- [-] 1. Set up project structure and core infrastructure
+- [x] 1. Set up project structure and core infrastructure
   - Create Python project with virtual environment (Python 3.9+)
   - Set up directory structure: `src/`, `tests/`, `config/`, `models/`, `scripts/`
   - Configure dependencies: FastAPI, SQLAlchemy, boto3 (AWS SDK), pytest, hypothesis, fast-check (for property tests)
@@ -17,8 +17,8 @@ All property-based tests use the `hypothesis` library for Python and are configu
   - Configure pytest with hypothesis plugin for property-based testing
   - _Requirements: 10.1, 10.2_
 
-- [ ] 2. Implement core data models and database layer
-  - [ ] 2.1 Create SQLAlchemy models for inventory, sales, forecasts, and users
+- [x] 2. Implement core data models and database layer
+  - [x] 2.1 Create SQLAlchemy models for inventory, sales, forecasts, and users
     - Implement `InventoryRecord`, `SKUMaster`, `SalesTransaction`, `DailySalesSummary` models
     - Implement `ForecastRecord`, `StockoutPredictionRecord` models
     - Implement `User`, `Store` models with relationships
@@ -30,7 +30,7 @@ All property-based tests use the `hypothesis` library for Python and are configu
     - Test data integrity constraints
     - _Requirements: 2.1, 3.1, 4.1_
   
-  - [ ] 2.3 Create database connection manager and repository pattern
+  - [x] 2.3 Create database connection manager and repository pattern
     - Implement connection pooling and session management
     - Create repository classes for each model with CRUD operations
     - Add transaction management and rollback handling
