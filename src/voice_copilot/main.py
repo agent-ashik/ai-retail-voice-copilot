@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
 from .logging_config import get_logger
+from .api.inventory import router as inventory_router
 
 logger = get_logger(__name__)
 
@@ -18,6 +19,9 @@ app = FastAPI(
     docs_url="/docs" if settings.debug else None,
     redoc_url="/redoc" if settings.debug else None,
 )
+
+# Include routers
+app.include_router(inventory_router)
 
 # Configure CORS
 app.add_middleware(

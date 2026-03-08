@@ -1,0 +1,12 @@
+{
+  "Rules": [
+    {
+      "Id": "DeleteOldVoiceRecordings",
+      "Status": "Enabled",
+      "Prefix": "recordings/",
+      "Expiration": {
+        "Days": 30
+      }
+    }
+  ]
+}
